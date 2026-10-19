@@ -1,0 +1,12 @@
+# --- Terraform ---
+# Provider plugins and modules downloaded by `terraform init`
+.terraform/
+# State files (and backups) can contain sensitive values; never commit them
+*.tfstate*
+# Your real variable values (commit terraform.tfvars.example instead)
+terraform.tfvars
+# Lambda zip packages built by Terraform
+infra/build/
+
+# --- Python ---
+__pycache__/

@@ -1,0 +1,7 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is git-ignored, so personal values stay out of the repo.
+
+aws_region          = "us-west-2"
+project_name        = "aqlake"
+alert_email         = "you@example.com"
+aqi_alert_threshold = 100
