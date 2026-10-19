@@ -23,7 +23,6 @@ runtime; it comes from the AWS-managed "AWS SDK for pandas" layer.
 
 import json
 import os
-
 import re
 import urllib.parse
 from datetime import datetime, timezone

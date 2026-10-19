@@ -34,3 +34,13 @@ output "transform_function_name" {
   description = "Name of the transform Lambda function."
   value       = aws_lambda_function.transform.function_name
 }
+
+output "glue_database_name" {
+  description = "Glue database holding the lake's tables."
+  value       = aws_glue_catalog_database.lake.name
+}
+
+output "athena_workgroup_name" {
+  description = "Athena workgroup to select in the query editor."
+  value       = aws_athena_workgroup.lake.name
+}
