@@ -44,3 +44,8 @@ output "athena_workgroup_name" {
   description = "Athena workgroup to select in the query editor."
   value       = aws_athena_workgroup.lake.name
 }
+
+output "alert_function_name" {
+  description = "Name of the alert Lambda function."
+  value       = aws_lambda_function.alert.function_name
+}

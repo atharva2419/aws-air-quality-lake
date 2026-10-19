@@ -26,7 +26,7 @@ variable "alert_email" {
 }
 
 variable "aqi_alert_threshold" {
-  description = "AQI value at or above which an alert should fire. Not wired to anything yet; reserved for the alerting logic added later."
+  description = "An alert email is sent when a city's US AQI rises above this value (100 is the top of the 'moderate' band)."
   type        = number
   default     = 100
 }

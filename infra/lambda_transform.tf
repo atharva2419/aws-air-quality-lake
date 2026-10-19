@@ -133,6 +133,10 @@ resource "aws_lambda_permission" "allow_raw_bucket" {
 resource "aws_s3_bucket_notification" "raw" {
   bucket = aws_s3_bucket.this["raw"].id
 
+  # Also publish all of this bucket's events to EventBridge, where the alert
+  # Lambda's rule picks them up (see lambda_alert.tf).
+  eventbridge = true
+
   lambda_function {
     lambda_function_arn = aws_lambda_function.transform.arn
     events              = ["s3:ObjectCreated:*"]
