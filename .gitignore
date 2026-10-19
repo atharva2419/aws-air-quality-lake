@@ -10,3 +10,9 @@ infra/build/
 
 # --- Python ---
 __pycache__/
+
+# --- Local test files ---
+# Output of `aws lambda invoke` and test payloads (out.json contains the
+# bucket name, which includes the AWS account ID)
+out.json
+test-alert.json
